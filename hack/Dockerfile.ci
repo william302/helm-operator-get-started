@@ -2,6 +2,7 @@ FROM golang:1.13 as builder
 
 ARG VERSION=unknown
 ARG GITCOMMIT=unknown
+ENV GOPROXY=https://goproxy.cn,direct
 
 RUN mkdir -p /podinfo/
 
